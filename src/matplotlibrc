@@ -1,0 +1,23 @@
+# =============================================================================
+# ================ MATPLOTLIBRC ESTILO PROFESIONAL Y MODERNO ==================
+# =============================================================================
+
+# ===== FIGURA =====
+figure.figsize   : 10, 6               # Tamaño de la figura en pulgadas (ancho, alto)
+figure.facecolor : F5F5F5              # Color de fondo de la figura (gris muy claro)
+figure.edgecolor : F5F5F5              # Color del borde de la figura
+figure.dpi       : 100                 # Puntos por pulgada
+
+# ===== EJES (AXES) =====
+axes.facecolor      : FFFFFF              # Color de fondo de los ejes (blanco)
+axes.edgecolor      : 414141              # Color de los bordes/ejes (gris oscuro)
+axes.linewidth      : 1.2                 # Grosor de la línea del borde de los ejes
+axes.grid           : True                # Mostrar cuadrícula
+axes.grid.axis      : both                # Mostrar cuadrícula en ambos ejes
+axes.grid.which     : major               # Solo para las marcas mayores
+axes.titlesize      : 18                  # Tamaño de la fuente del título del gráfico
+axes.titleweight    : bold                # Peso de la fuente del título
+axes.titlepad       : 20                  # Espacio entre el título y el gráfico
+axes.labelsize      : 14                  # Tamaño de la fuente de las etiquetas de los ejes
+axes.labelcolor     : 333333              # Color de la fuente de las etiquetas (gris oscuro)
+axes.labelweight    : normal              # Peso de la

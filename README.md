@@ -78,8 +78,32 @@ You must fork the [original repository](), and turn in a link to your groups rep
   * Plots: cost-function convergence, coefficient paths, predicted vs. actual values.
 * A write-up in Markdown. Replace the contents of this file (`README.md`) with:
   
-  * The names of your group's members,
+  * The names of your group's members:
+   - Jorge Alexis Dongo Gutierrez
+   - Marcelo Sebastian Chavez Cisneros
+   
+### First data set:
+
   * Differences observed between OLS, Ridge, and Lasso,
+The estimated coefficients and the errors obtained across all methods appear to be quite similar. However, while the execution time for OLS is negligible, Ridge and Lasso required more time with Lasso taking slightly longer. In a more complex scenario, we might see a tangible benefit from using Ridge or Lasso.
+
   * Effect of learning rate on gradient descent,
+We experimented with learning rate coefficients of 0.4, 0.9, and 2. With 0.4 and 0.9, the algorithm converged to a solution, and the cost vs. iteration curve was steeper with the higher coefficient. Based on this, we decided to try an even larger coefficient to potentially achieve faster convergence. However, using a learning rate of 2 resulted in a process that failed to converge.
+
   * How k-fold cross-validation influenced the choice of regularization strength.
 
+For this particular dataset, we did not observe any significant changes when applying k-fold cross-validation.
+
+### Second data set:
+
+  * Differences observed between OLS, Ridge, and Lasso,
+
+Implementing OLS is computationally simpler, while Ridge and Lasso require iterating over a lambda. Regarding errors, the MSE of OLS, Ridge, and Lasso is the same; therefore, there is no difference in that metric for these three models. However, Lasso converges faster than Ridge, which takes more iterations to reach the optimum.
+
+  * Effect of learning rate on gradient descent,
+
+With a higher value, it converges faster; however, during the model calculation process, if we set a very high value, the iteration would fail to converge, and in my case, it caused my Jupyter kernel to crash.
+
+  * How k-fold cross-validation influenced the choice of regularization strength.
+
+In my case, k-fold did not substantially improve the model, as the mean squared error was practically the same. Where it did significantly improve the mean squared error was in the polynomial case, reducing it by almost 40%.
