@@ -78,8 +78,15 @@ You must fork the [original repository](), and turn in a link to your groups rep
   * Plots: cost-function convergence, coefficient paths, predicted vs. actual values.
 * A write-up in Markdown. Replace the contents of this file (`README.md`) with:
   
-  * The names of your group's members,
+  * The names of your group's members:
+   - Jorge Alexis Dongo Gutierrez
+   - Marcelo Sebastian Chavez Cisneros
+### First data set:
   * Differences observed between OLS, Ridge, and Lasso,
+
   * Effect of learning rate on gradient descent,
   * How k-fold cross-validation influenced the choice of regularization strength.
+
+
+### Second data set:
 
